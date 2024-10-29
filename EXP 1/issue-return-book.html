@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issue/Return Book</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Issue or Return Book</h2>
+    <form id="issueReturnForm">
+        <label for="bookId">Book ID:</label>
+        <input type="text" id="bookId" name="bookId" required>
+        
+        <label for="action">Action:</label>
+        <select id="action" name="action">
+            <option value="issue">Issue</option>
+            <option value="return">Return</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Optional: JavaScript to prevent form submission reload -->
+    <script>
+        document.getElementById("issueReturnForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevents page reload on form submission
+            alert("Form submitted!");
+        });
+    </script>
+</body>
+</html>

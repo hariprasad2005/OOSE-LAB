@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Update Profile</h2>
+        <form id="updateProfileForm">
+            <label for="regNumber">Registration Number:</label>
+            <input type="text" id="regNumber" name="regNumber" readonly>
+
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" name="studentName" readonly>
+
+            <label for="department">Department:</label>
+            <input type="text" id="department" name="department" readonly>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="cgpa">CGPA:</label>
+            <input type="number" id="cgpa" name="cgpa" step="0.01" required>
+
+            <button type="button" onclick="saveProfile()">Save</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
